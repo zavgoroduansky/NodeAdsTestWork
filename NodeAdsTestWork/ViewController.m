@@ -158,9 +158,7 @@ static CGFloat const SearchViewNormalHeight = 70.0;
             [self.mainTableView reloadData];
         }
     }];
-    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Відміна" style:UIAlertActionStyleCancel handler:nil];
     [alertController addAction:okAction];
-    [alertController addAction:cancelAction];
     
     [self presentViewController:alertController animated:YES completion:nil];
 }
